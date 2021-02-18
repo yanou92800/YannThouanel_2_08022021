@@ -2,19 +2,20 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="Reservia.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
   <title>Reservia</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     
-    <p><img class="logo_header" src="images/logo/Reservia-logo.png" alt="Reservia-logo"></p>
-    <span class="haut_droite">
-      <a href="#sec_heberg" class="nav_header">Hébergements</a>
-      <a href="#sec_acti" class="nav_header">Activités</a>
-    </span>
-    <a class="nav_header2">S'incrire</a>
+    <img class="logo_header" src="images/logo/Reservia-logo.png" alt="Reservia-logo">
+    <nav class="nav_header">
+      <a href="#sec_heberg" class="nav_header_lien">Hébergements</a>
+      <a href="#sec_acti" class="nav_header_lien">Activités</a>
+    </nav>
+    <a class="sign_header">S'incrire</a>
   
   </header>
   
@@ -76,7 +77,7 @@
     </div>
   </nav>
   
-  <section id="sec_heberg">
+  <div id="sec_heberg">
     
     <article>
       <h2>Hébergements à Marseille</h2>
@@ -220,7 +221,7 @@
       </div>
     </aside>
   
-  </section>
+  </div>
 
   <section id="sec_acti">
 
