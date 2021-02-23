@@ -43,8 +43,8 @@ a:visited {
 header {
     display: grid;
     align-items: center;
-    grid-template-columns: 904px 275px 90px;
-    grid-template-areas: "logo nav sign";
+    grid-template-columns: 90px auto 275px 90px;
+    grid-template-areas: "logo . nav sign";
     height: 96px;
     padding: 0px 25px 0px 25px;
 }
@@ -79,26 +79,24 @@ header {
     font-size: 16px;
     grid-area: sign;
 }
-h1+p {
-    font-family: "raleway-semibold";
-    font-size: 14px;
-}
-h3 {
-    font-family: 'raleway-extrabold';
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-h2 {
+h1 {
     font-family: "raleway-extrabold";
     font-size: 20px;
 }
-.hébergements h2 {
+
+h2 {
+    margin-left: 15px;
+    font-family: "raleway-extrabold";
+    font-size: 16px;
+}
+.hébergement h2 {
     margin-left: 20px;
     font-family: "raleway-extrabold";
     font-size: 20px;
 }
-h3+p {
+h3 {
+    font-family: 'raleway-extrabold';
+    font-size: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -107,19 +105,26 @@ h4 {
     font-size: 16px;
     font-family: "raleway-extrabold";
 }
+h1+p {
+    font-family: "raleway-semibold";
+    font-size: 14px;
+}
+h3+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .fa-star {
     width: 10px;
 }
-#barre_filtres_résultat_rechercher {
+.fa-map-marker-alt {
+    font-size: 20px;
+}
+#input_filtre_résultat_rechercher {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-h1 {
-    font-family: "raleway-extrabold";
-    font-size: 20px;
-}
-.barre_rechercher {
+.input_rechercher {
     display: flex;
     margin-bottom: 20px;
 }
@@ -131,9 +136,6 @@ h1 {
     background-color: rgb(224, 224, 224);
     width: 50px;
     height: 47px;
-}
-.fa-map-marker-alt {
-    font-size: 20px;
 }
 .rechercher_centre {
     padding: 0px 20px;
@@ -159,7 +161,17 @@ h1 {
     font-family: 'raleway-semibold';
     font-size: 14px;
 }
-.filtres_rechercher {
+#rechercher {
+    padding: 0px 25px 0px 25px;
+    margin-bottom: 15px;
+}
+.filtre_rechercher h3 {
+    font-family: 'raleway-extrabold';
+    font-size: 15px;
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+.filtre_rechercher {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -187,14 +199,14 @@ h1 {
     color: #0065FC;
     font-size: 15px;
 }
+.filtre:hover {
+background-color: #0065FC;
+color: white;
+}
 .filtre a {
     font-family: "raleway-extrabold";
     font-size: 14px;
     padding: 0 20px;
-}
-.filtre:hover {
-background-color: #0065FC;
-color: white;
 }
 .résultat_rechercher {
     display: flex;
@@ -222,43 +234,49 @@ color: white;
     margin-left: 5px;
     font-size: 14px;
 }
-.lieu {
-display: flex;
-flex-direction: column;
-border: 5px solid white;
-border-radius: 15px;
-background-color: white;
-overflow: hidden;
-width: 222px;
-height: 184px;
-box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-margin-bottom: 30px;
-}
-.contour_image {
-    height: 58%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.texte_photo {
+#hébergement_aside {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 42%;
-    margin-left: 10px;
-}
-#articles {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
-.hébergements {
+.hébergement {
     width: 60%;
     border-radius: 15px;
     background-color: #f2f2f2;
     padding: 20px 20px 0px 20px;
     margin-bottom: 15px;
 }
-.photo {
+#carte_hébergement {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.carte {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    width: 222px;
+    height: 184px;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    margin-bottom: 30px;
+}
+.contour_image {
+    height: 58%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.texte_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 42%;
+    margin-left: 10px;
+}
+.image {
     object-fit: cover;
     width: 100%; 
     height: 100%;
@@ -269,13 +287,18 @@ aside {
     padding: 20px 35px 0px 35px;
     margin-bottom: 15px;
 }
-#asides {
+#texte_carte_populaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#carte_aside {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 328px;
 }
-.populaire {
+.carte_populaire {
     display: flex;
     border-radius: 15px;
     background-color: white;
@@ -285,124 +308,145 @@ aside {
     height: 133px;
     margin-bottom: 30px;
     width: 328px;
-    }
+}
+#texte_carte_populaire h2 {
+    font-family: "raleway-extrabold";
+    font-size: 20px;
+    margin-left: 0;
+}
 .contour_image_populaire {
-        width: 40%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-.texte_photo_populaire {
+    width: 40%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.image_populaire {
+    object-fit: cover;
+    height: 100%;
+    width: 122px;
+}
+.texte_populaire {
     width: 50%;
-        height: 100%;
-        margin-left: 15px;
-        margin-top: 10px;
-    }
-.photo_populaire {
-        object-fit: cover;
-        height: 100%;
-        width: 122px;
-    }
-    .fa-star {
-        color: #0065FC;
-    }
-    .star-empty {
-color: #f2f2f2;
-    }
-    .texte_photo_populaire p {
-        margin-bottom: 40px;
-        margin-top: 10px;
-    }
-    .loisirs {
-        height: 434px;
-        width: 294px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
+    height: 95%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.fa-star {
+    color: #0065FC;
+}
+.star-empty {
+    color: #f2f2f2;
+}
+.texte_populaire p {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+#activité {
+    margin-bottom: 15px;
+    padding: 0px 5px;
+}
+
+#activité h3 {
+    margin-left: 15px;
+    font-family: 'raleway-extrabold';
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.global_carte_activité {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.carte_activité {
+    height: 434px;
+    width: 294px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    margin-bottom: 15px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }  
-.contour_image_loisirs {
-    height: 364px;
+}  
+.carte_activité2 {
+    width: 294px;
+    height: 229px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.carte_activité3 {
+    width: 294px;
+    height: 195px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}  
+.carte_activité4 {
+    width: 294px;
+    height: 168px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carte_activité5 {
+    width: 294px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}    
+.contour_image_carte_activité {
+    height: 388px;
     margin-bottom: 0px;
     margin-top: 0px;
-    }
-.contour_image_loisirs2 {
-     height: 168px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        }
-.contour_image_loisirs3 {
-            height: 132px;
-            margin-bottom: 0px;
-            margin-top: 0px;
-            }
-.contour_image_loisirs4 {
-                height: 110px;
-                margin-bottom: 0px;
-                margin-top: 0px;
-                }
-.contour_image_loisirs5 {
-                    height: 146px;
-                    margin-bottom: 0px;
-                    margin-top: 0px;
-                    }
-    .photo_loisirs {
-        object-fit: cover;
-        width: 100%; 
-        height: 100%;
-    }
-    .loisirs3 {
-        width: 294px;
-        height: 191px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }  
-    .loisirs5 {
-        width: 280px;
-        height: 196px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }  
-    .loisirs2 {
-        width: 294px;
-        height: 229px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }  
-    .loisirs4 {
-        width: 294px;
-        height: 168px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }  
-.position2 {
+}
+.contour_image_carte_activité2 {
+    height: 184px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.contour_image_carte_activité3 {
+    height: 150px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.contour_image_carte_activité4 {
+    height: 122px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.contour_image_carte_activité5 {
+    height: 154px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.image_carte_activité {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+} 
+.conteneur_carte_activité {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -414,13 +458,13 @@ footer {
     height: 211px;
     justify-content: space-around;
 }
-.navfoot {
+.nav_footer {
     display: flex;
     width: 28%;
     align-items: self-start;
     padding-top: 40px;
 }
-.navfoot nav {
+.nav_footer nav {
     display: flex;
     flex-direction: column;
 }
@@ -434,53 +478,6 @@ footer a {
     margin-bottom: 10px;
     font-size: 14px;
 }
-h2 {
-    margin-left: 15px;
-    font-family: "raleway-extrabold";
-    font-size: 16px;
-}
-#popu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.activités {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#activité {
-    margin-bottom: 15px;
-    padding: 0px 5px;
-}
-#hébergements_aside {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 15px;
-}
-#activité h3 {
-    margin-left: 15px;
-    font-family: 'raleway-extrabold';
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-#rechercher {
-    padding: 0px 25px 0px 25px;
-    margin-bottom: 15px;
-}
-.filtres_rechercher h3 {
-    font-family: 'raleway-extrabold';
-    font-size: 15px;
-    margin-top: 17px;
-    margin-bottom: 0px;
-}
-#popu h2 {
-    font-family: "raleway-extrabold";
-    font-size: 20px;
-    margin-left: 0;
-}
-
 @media screen and (max-width: 480px)
 {
     @font-face {
@@ -570,26 +567,24 @@ h2 {
         grid-area: sign;
         padding-right: 20px;
     }
-    h1+p {
-        font-family: "raleway-semibold";
-        font-size: 14px;
-    }
-    h3 {
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    h2 {
+    h1 {
         font-family: "raleway-extrabold";
         font-size: 20px;
     }
-    .hébergements h2 {
+    
+    h2 {
+        margin-left: 15px;
+        font-family: "raleway-extrabold";
+        font-size: 16px;
+    }
+    .hébergement h2 {
         margin-left: 20px;
         font-family: "raleway-extrabold";
         font-size: 20px;
     }
-    h3+p {
+    h3 {
+        font-family: 'raleway-extrabold';
+        font-size: 15px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -598,20 +593,26 @@ h2 {
         font-size: 16px;
         font-family: "raleway-extrabold";
     }
+    h1+p {
+        font-family: "raleway-semibold";
+        font-size: 14px;
+    }
+    h3+p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     .fa-star {
         width: 10px;
     }
-    #barre_filtres_résultat_rechercher {
+    .fa-map-marker-alt {
+        font-size: 20px;
+    }
+    #input_filtre_résultat_rechercher {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-    h1 {
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-        color: blue;
-    }
-    .barre_rechercher {
+    .input_rechercher {
         display: flex;
         margin-bottom: 20px;
     }
@@ -623,9 +624,6 @@ h2 {
         background-color: rgb(224, 224, 224);
         width: 50px;
         height: 47px;
-    }
-    .fa-map-marker-alt {
-        font-size: 20px;
     }
     .rechercher_centre {
         padding: 0px 20px;
@@ -651,7 +649,17 @@ h2 {
         font-family: 'raleway-semibold';
         font-size: 14px;
     }
-    .filtres_rechercher {
+    #rechercher {
+        padding: 0px 25px 0px 25px;
+        margin-bottom: 15px;
+    }
+    .filtre_rechercher h3 {
+        font-family: 'raleway-extrabold';
+        font-size: 15px;
+        margin-top: 17px;
+        margin-bottom: 0px;
+    }
+    .filtre_rechercher {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
@@ -679,14 +687,14 @@ h2 {
         color: #0065FC;
         font-size: 15px;
     }
+    .filtre:hover {
+        background-color: #0065FC;
+        color: white;
+    }
     .filtre a {
         font-family: "raleway-extrabold";
         font-size: 14px;
         padding: 0 20px;
-    }
-    .filtre:hover {
-    background-color: #0065FC;
-    color: white;
     }
     .résultat_rechercher {
         display: flex;
@@ -714,43 +722,49 @@ h2 {
         margin-left: 5px;
         font-size: 14px;
     }
-    .lieu {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid white;
-    border-radius: 15px;
-    background-color: white;
-    overflow: hidden;
-    width: 222px;
-    height: 184px;
-    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-    margin-bottom: 30px;
-    }
-    .contour_image {
-        height: 58%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .texte_photo {
+    #hébergement_aside {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 42%;
-        margin-left: 10px;
-    }
-    #articles {
-        display: flex;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 15px;
     }
-    .hébergements {
+    .hébergement {
         width: 60%;
         border-radius: 15px;
         background-color: #f2f2f2;
         padding: 20px 20px 0px 20px;
         margin-bottom: 15px;
     }
-    .photo {
+    #carte_hébergement {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .carte {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid white;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        width: 222px;
+        height: 184px;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 30px;
+    }
+    .contour_image {
+        height: 58%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .texte_image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 42%;
+        margin-left: 10px;
+    }
+    .image {
         object-fit: cover;
         width: 100%; 
         height: 100%;
@@ -761,13 +775,18 @@ h2 {
         padding: 20px 35px 0px 35px;
         margin-bottom: 15px;
     }
-    #asides {
+    #texte_carte_populaire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #carte_aside {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         width: 328px;
     }
-    .populaire {
+    .carte_populaire {
         display: flex;
         border-radius: 15px;
         background-color: white;
@@ -777,124 +796,145 @@ h2 {
         height: 133px;
         margin-bottom: 30px;
         width: 328px;
-        }
+    }
+    #texte_carte_populaire h2 {
+        font-family: "raleway-extrabold";
+        font-size: 20px;
+        margin-left: 0;
+    }
     .contour_image_populaire {
-            width: 40%;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-    .texte_photo_populaire {
+        width: 40%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .image_populaire {
+        object-fit: cover;
+        height: 100%;
+        width: 122px;
+    }
+    .texte_populaire {
         width: 50%;
-            height: 100%;
-            margin-left: 15px;
-            margin-top: 10px;
-        }
-    .photo_populaire {
-            object-fit: cover;
-            height: 100%;
-            width: 122px;
-        }
-        .fa-star {
-            color: #0065FC;
-        }
-        .star-empty {
-    color: #f2f2f2;
-        }
-        .texte_photo_populaire p {
-            margin-bottom: 40px;
-            margin-top: 10px;
-        }
-        .loisirs {
-            height: 434px;
-            width: 294px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
+        height: 95%;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .fa-star {
+        color: #0065FC;
+    }
+    .star-empty {
+        color: #f2f2f2;
+    }
+    .texte_populaire p {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    #activité {
+        margin-bottom: 15px;
+        padding: 0px 5px;
+    }
+    
+    #activité h3 {
+        margin-left: 15px;
+        font-family: 'raleway-extrabold';
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .global_carte_activité {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .carte_activité {
+        height: 434px;
+        width: 294px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        }  
-    .contour_image_loisirs {
-        height: 364px;
+    }  
+    .carte_activité2 {
+        width: 294px;
+        height: 229px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .carte_activité3 {
+        width: 294px;
+        height: 195px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }  
+    .carte_activité4 {
+        width: 294px;
+        height: 168px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .carte_activité5 {
+        width: 294px;
+        height: 200px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    .contour_image_carte_activité {
+        height: 388px;
         margin-bottom: 0px;
         margin-top: 0px;
-        }
-    .contour_image_loisirs2 {
-         height: 168px;
-            margin-bottom: 0px;
-            margin-top: 0px;
-            }
-    .contour_image_loisirs3 {
-                height: 132px;
-                margin-bottom: 0px;
-                margin-top: 0px;
-                }
-    .contour_image_loisirs4 {
-                    height: 110px;
-                    margin-bottom: 0px;
-                    margin-top: 0px;
-                    }
-    .contour_image_loisirs5 {
-                        height: 146px;
-                        margin-bottom: 0px;
-                        margin-top: 0px;
-                        }
-        .photo_loisirs {
-            object-fit: cover;
-            width: 100%; 
-            height: 100%;
-        }
-        .loisirs3 {
-            width: 294px;
-            height: 191px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-        .loisirs5 {
-            width: 280px;
-            height: 196px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-        .loisirs2 {
-            width: 294px;
-            height: 229px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-        .loisirs4 {
-            width: 294px;
-            height: 168px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-    .position2 {
+    }
+    .contour_image_carte_activité2 {
+        height: 184px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .contour_image_carte_activité3 {
+        height: 150px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .contour_image_carte_activité4 {
+        height: 122px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .contour_image_carte_activité5 {
+        height: 154px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .image_carte_activité {
+        object-fit: cover;
+        width: 100%; 
+        height: 100%;
+    } 
+    .conteneur_carte_activité {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -906,13 +946,13 @@ h2 {
         height: 211px;
         justify-content: space-around;
     }
-    .navfoot {
+    .nav_footer {
         display: flex;
         width: 28%;
         align-items: self-start;
         padding-top: 40px;
     }
-    .navfoot nav {
+    .nav_footer nav {
         display: flex;
         flex-direction: column;
     }
@@ -925,52 +965,6 @@ h2 {
     footer a {
         margin-bottom: 10px;
         font-size: 14px;
-    }
-    h2 {
-        margin-left: 15px;
-        font-family: "raleway-extrabold";
-        font-size: 16px;
-    }
-    #popu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .activités {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    #activité {
-        margin-bottom: 15px;
-        padding: 0px 5px;
-    }
-    #hébergements_aside {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 15px;
-    }
-    #activité h3 {
-        margin-left: 15px;
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-bottom: 15px;
-    }
-    #rechercher {
-        padding: 0px 25px 0px 25px;
-        margin-bottom: 15px;
-    }
-    .filtres_rechercher h3 {
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-top: 17px;
-        margin-bottom: 0px;
-    }
-    #popu h2 {
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-        margin-left: 0;
     }
 }
 
@@ -1021,8 +1015,8 @@ h2 {
     header {
         display: grid;
         align-items: center;
-        grid-template-columns: 904px 275px 90px;
-        grid-template-areas: "logo nav sign";
+        grid-template-columns: 90px auto 275px 90px;
+        grid-template-areas: "logo . nav sign";
         height: 96px;
         padding: 0px 25px 0px 25px;
     }
@@ -1057,26 +1051,24 @@ h2 {
         font-size: 16px;
         grid-area: sign;
     }
-    h1+p {
-        font-family: "raleway-semibold";
-        font-size: 14px;
-    }
-    h3 {
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    h2 {
+    h1 {
         font-family: "raleway-extrabold";
         font-size: 20px;
     }
-    .hébergements h2 {
+    
+    h2 {
+        margin-left: 15px;
+        font-family: "raleway-extrabold";
+        font-size: 16px;
+    }
+    .hébergement h2 {
         margin-left: 20px;
         font-family: "raleway-extrabold";
         font-size: 20px;
     }
-    h3+p {
+    h3 {
+        font-family: 'raleway-extrabold';
+        font-size: 15px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -1085,20 +1077,26 @@ h2 {
         font-size: 16px;
         font-family: "raleway-extrabold";
     }
+    h1+p {
+        font-family: "raleway-semibold";
+        font-size: 14px;
+    }
+    h3+p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     .fa-star {
         width: 10px;
     }
-    #barre_filtres_résultat_rechercher {
+    .fa-map-marker-alt {
+        font-size: 20px;
+    }
+    #input_filtre_résultat_rechercher {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-    h1 {
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-        color: red;
-    }
-    .barre_rechercher {
+    .input_rechercher {
         display: flex;
         margin-bottom: 20px;
     }
@@ -1110,9 +1108,6 @@ h2 {
         background-color: rgb(224, 224, 224);
         width: 50px;
         height: 47px;
-    }
-    .fa-map-marker-alt {
-        font-size: 20px;
     }
     .rechercher_centre {
         padding: 0px 20px;
@@ -1138,7 +1133,17 @@ h2 {
         font-family: 'raleway-semibold';
         font-size: 14px;
     }
-    .filtres_rechercher {
+    #rechercher {
+        padding: 0px 25px 0px 25px;
+        margin-bottom: 15px;
+    }
+    .filtre_rechercher h3 {
+        font-family: 'raleway-extrabold';
+        font-size: 15px;
+        margin-top: 17px;
+        margin-bottom: 0px;
+    }
+    .filtre_rechercher {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
@@ -1166,14 +1171,14 @@ h2 {
         color: #0065FC;
         font-size: 15px;
     }
+    .filtre:hover {
+        background-color: #0065FC;
+        color: white;
+    }
     .filtre a {
         font-family: "raleway-extrabold";
         font-size: 14px;
         padding: 0 20px;
-    }
-    .filtre:hover {
-    background-color: #0065FC;
-    color: white;
     }
     .résultat_rechercher {
         display: flex;
@@ -1201,43 +1206,49 @@ h2 {
         margin-left: 5px;
         font-size: 14px;
     }
-    .lieu {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid white;
-    border-radius: 15px;
-    background-color: white;
-    overflow: hidden;
-    width: 222px;
-    height: 184px;
-    box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-    margin-bottom: 30px;
-    }
-    .contour_image {
-        height: 58%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .texte_photo {
+    #hébergement_aside {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 42%;
-        margin-left: 10px;
-    }
-    #articles {
-        display: flex;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 15px;
     }
-    .hébergements {
+    .hébergement {
         width: 60%;
         border-radius: 15px;
         background-color: #f2f2f2;
         padding: 20px 20px 0px 20px;
         margin-bottom: 15px;
     }
-    .photo {
+    #carte_hébergement {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .carte {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid white;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        width: 222px;
+        height: 184px;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 30px;
+    }
+    .contour_image {
+        height: 58%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .texte_image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 42%;
+        margin-left: 10px;
+    }
+    .image {
         object-fit: cover;
         width: 100%; 
         height: 100%;
@@ -1248,13 +1259,18 @@ h2 {
         padding: 20px 35px 0px 35px;
         margin-bottom: 15px;
     }
-    #asides {
+    #texte_carte_populaire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #carte_aside {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         width: 328px;
     }
-    .populaire {
+    .carte_populaire {
         display: flex;
         border-radius: 15px;
         background-color: white;
@@ -1264,124 +1280,146 @@ h2 {
         height: 133px;
         margin-bottom: 30px;
         width: 328px;
-        }
+    }
+    #texte_carte_populaire h2 {
+        font-family: "raleway-extrabold";
+        font-size: 20px;
+        margin-left: 0;
+    }
     .contour_image_populaire {
-            width: 40%;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-    .texte_photo_populaire {
+        width: 40%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .image_populaire {
+        object-fit: cover;
+        height: 100%;
+        width: 122px;
+    }
+    .texte_populaire {
         width: 50%;
-            height: 100%;
-            margin-left: 15px;
-            margin-top: 10px;
-        }
-    .photo_populaire {
-            object-fit: cover;
-            height: 100%;
-            width: 122px;
-        }
-        .fa-star {
-            color: #0065FC;
-        }
-        .star-empty {
-    color: #f2f2f2;
-        }
-        .texte_photo_populaire p {
-            margin-bottom: 40px;
-            margin-top: 10px;
-        }
-        .loisirs {
-            height: 434px;
-            width: 294px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
+        height: 95%;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .fa-star {
+        color: #0065FC;
+    }
+    .star-empty {
+        color: #f2f2f2;
+    }
+    .texte_populaire p {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    #activité {
+        margin-bottom: 15px;
+        padding: 0px 5px;
+    }
+    
+    #activité h3 {
+        text-align: center;
+        margin-left: 15px;
+        font-family: 'raleway-extrabold';
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .global_carte_activité {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .carte_activité {
+        height: 434px;
+        width: 294px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        }  
-    .contour_image_loisirs {
-        height: 364px;
+    }  
+    .carte_activité2 {
+        width: 294px;
+        height: 229px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .carte_activité3 {
+        width: 294px;
+        height: 195px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }  
+    .carte_activité4 {
+        width: 294px;
+        height: 168px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .carte_activité5 {
+        width: 294px;
+        height: 200px;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    .contour_image_carte_activité {
+        height: 388px;
         margin-bottom: 0px;
         margin-top: 0px;
-        }
-    .contour_image_loisirs2 {
-         height: 168px;
-            margin-bottom: 0px;
-            margin-top: 0px;
-            }
-    .contour_image_loisirs3 {
-                height: 132px;
-                margin-bottom: 0px;
-                margin-top: 0px;
-                }
-    .contour_image_loisirs4 {
-                    height: 110px;
-                    margin-bottom: 0px;
-                    margin-top: 0px;
-                    }
-    .contour_image_loisirs5 {
-                        height: 146px;
-                        margin-bottom: 0px;
-                        margin-top: 0px;
-                        }
-        .photo_loisirs {
-            object-fit: cover;
-            width: 100%; 
-            height: 100%;
-        }
-        .loisirs3 {
-            width: 294px;
-            height: 191px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-        .loisirs5 {
-            width: 280px;
-            height: 196px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-        .loisirs2 {
-            width: 294px;
-            height: 229px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-        .loisirs4 {
-            width: 294px;
-            height: 168px;
-            border-radius: 15px;
-            background-color: white;
-            overflow: hidden;
-            box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-            margin-bottom: 15px;
-            display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }  
-    .position2 {
+    }
+    .contour_image_carte_activité2 {
+        height: 184px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .contour_image_carte_activité3 {
+        height: 150px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .contour_image_carte_activité4 {
+        height: 122px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .contour_image_carte_activité5 {
+        height: 154px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .image_carte_activité {
+        object-fit: cover;
+        width: 100%; 
+        height: 100%;
+    } 
+    .conteneur_carte_activité {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1393,13 +1431,13 @@ h2 {
         height: 211px;
         justify-content: space-around;
     }
-    .navfoot {
+    .nav_footer {
         display: flex;
         width: 28%;
         align-items: self-start;
         padding-top: 40px;
     }
-    .navfoot nav {
+    .nav_footer nav {
         display: flex;
         flex-direction: column;
     }
@@ -1412,51 +1450,5 @@ h2 {
     footer a {
         margin-bottom: 10px;
         font-size: 14px;
-    }
-    h2 {
-        margin-left: 15px;
-        font-family: "raleway-extrabold";
-        font-size: 16px;
-    }
-    #popu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .activités {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    #activité {
-        margin-bottom: 15px;
-        padding: 0px 5px;
-    }
-    #hébergements_aside {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 15px;
-    }
-    #activité h3 {
-        margin-left: 15px;
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-bottom: 15px;
-    }
-    #rechercher {
-        padding: 0px 25px 0px 25px;
-        margin-bottom: 15px;
-    }
-    .filtres_rechercher h3 {
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-top: 17px;
-        margin-bottom: 0px;
-    }
-    #popu h2 {
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-        margin-left: 0;
     }
 }
