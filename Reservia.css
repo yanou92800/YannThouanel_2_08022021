@@ -478,13 +478,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: 1275px;
+    width: 1320px;
+    padding: 20px;
 }
 .nav_footer {
-    display: flex;
     width: 33%;
-    align-items: self-start;
-    padding-top: 40px 0;
 }
 .nav_footer nav {
     display: flex;
@@ -509,96 +507,111 @@ footer a {
     header 
     {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 80px 80px;
+        grid-template-rows: 15vw 15vw;
         grid-template-areas: "logo sign" "nav nav";
-        height: 160px;
-        padding: 15px 0 15px 0;
+        height: 40vw;
+        padding: 4vw 0;
     }
     .logo_header {
-        height: 60px;
-        padding-left: 20px;
+        height: 15vw;
+        padding-left: 4vw;
     }
     .nav_header {
-        height: 60px;
+        height: 15vw;
     }
     .nav_header_lien {
-        font-size: 20px;
-        width: 240px;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+        width: 60vw;
     }
     .nav_header_lien:hover {
         border-bottom: 2px solid #0065FC;
         border-top: none;
     }
     .sign_header {
-        font-size: 20px;
-        padding-right: 20px;
+        font-size: 5vw;
+        padding-right: 5vw;
     }
     h1 {
-        font-size: 27px;
+        font-size: 7vw;
     }
     h1+p {
-        font-size: 20px;
+        font-size: 5vw;
     }
     .input_rechercher {
         justify-content: center;
-        margin-bottom: 30px;
-        margin-top: 10px;
+        margin-bottom: 7vw;
+        margin-top: 2vw;
     }
     .rechercher_gauche {
-        width: 57px;
-        height: 57px;
+        width: 14vw;
+        height: 14vw;
     }
     .rechercher_centre {
         width: 65%;
-        height: 55px;
-        font-size: 25px;
+        height: 14vw;
+        font-size: 6vw;
     }
     .rechercher_droite {
-        margin-left: -15px;
+        margin-left: -4vw;
 
     }
     .rechercher_droite_bouton {
-        border-radius: 15px;
-        height: 57px;
-        width: 37px;
+        border-radius: 4vw;
+        height: 14vw;
+        width: 9vw;
         z-index: 1;
     }
     .rechercher_droite_loupe {
         z-index: 2;
-        height: 57px;
+        height: 14vw;
         font-size: 18px;
         color: white;
         background-color: #0065FC;
-        border-radius: 15px;
+        border-radius: 4vw;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0px 10px 0px 10px;
+        padding: 0 2vw;
         cursor: pointer;
-        width: 37px;
+        width: 9vw;
     }
     .filtre_rechercher h3 {
-        font-size: 20px;
-        margin-right: 193px;
+        font-size: 5vw;
+        margin-right: 48vw;
     }
     .filtre {
-        margin-left: 0px;
-        margin-right: 15px;
-        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 4vw;
+        margin-bottom: 4vw;
     }
     .filtre a {
-        font-size: 21px;
+        font-size: 5vw;
     }
     .fa-info {
-        font-size: 10px;
+        font-size: 2.5vw;
         color: #0065FC;
     }
     .fa-chart-line{
-        font-size: 30px;
-        margin-top: 10px;
+        font-size: 7vw;
+        margin-top: 2vw;
     }
     .résultat_texte {
-        margin-left: 5px;
-        font-size: 14px;
+        margin-left: 1vw;
+        font-size: 3.5vw;
+    }
+    aside {
+        border-radius: 0;
+        padding: 4vw 4vw 0 4vw;
+    }
+    .carte_populaire {
+        width: 100%;
+    }
+    #carte_aside {
+        width:100%
+    }
+    main {
+        margin-top: -13vw;
     }
 }
