@@ -484,7 +484,7 @@ footer {
     display: flex;
     width: 33%;
     align-items: self-start;
-    padding-top: 40px;
+    padding-top: 40px 0;
 }
 .nav_footer nav {
     display: flex;
