@@ -31,8 +31,12 @@
 body {
     font-size: 12px;
     font-family: "Raleway";
-    margin: 0px;
+    margin: 0px;  
+}
+#body {
     max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 a {
     text-decoration: none;
@@ -467,12 +471,18 @@ footer {
     background: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
-    height: 211px;
+    height: auto;
     justify-content: space-around;
+}
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 1275px;
 }
 .nav_footer {
     display: flex;
-    width: 28%;
+    width: 33%;
     align-items: self-start;
     padding-top: 40px;
 }
@@ -526,6 +536,11 @@ footer a {
         font-size: 12px;
         font-family: "Raleway";
         margin: 0px;
+    }
+    #body {
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
     }
     a {
         text-decoration: none;
@@ -962,18 +977,20 @@ footer a {
         background: #f2f2f2;
         display: flex;
         flex-wrap: wrap;
-        height: 211px;
+        height: auto;
         justify-content: space-around;
+    }
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 1275px;
     }
     .nav_footer {
         display: flex;
-        width: 28%;
+        width: 33%;
         align-items: self-start;
         padding-top: 40px;
-    }
-    .nav_footer nav {
-        display: flex;
-        flex-direction: column;
     }
     footer h2 {
         font-family: "raleway-extrabold";
@@ -1022,6 +1039,11 @@ footer a {
         font-size: 12px;
         font-family: "Raleway";
         margin: 0px;
+    }
+    #body {
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
     }
     a {
         text-decoration: none;
@@ -1479,18 +1501,20 @@ footer a {
         background: #f2f2f2;
         display: flex;
         flex-wrap: wrap;
-        height: 211px;
+        height: auto;
         justify-content: space-around;
+    }
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 1275px;
     }
     .nav_footer {
         display: flex;
-        width: 28%;
+        width: 33%;
         align-items: self-start;
         padding-top: 40px;
-    }
-    .nav_footer nav {
-        display: flex;
-        flex-direction: column;
     }
     footer h2 {
         font-family: "raleway-extrabold";
