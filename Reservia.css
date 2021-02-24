@@ -63,12 +63,12 @@ header {
     justify-content: space-around;
     grid-area: nav;
     height: 94px;
-    border-top: 2px solid transparent;
 }
 .nav_header_lien {
     display: flex;
     align-items: center;
     font-size: 16px;
+    border-top: 2px solid transparent;
 }
 .nav_header_lien:hover {
     transition: border 0.5s ease-out;
@@ -500,561 +500,14 @@ footer a {
     margin-bottom: 10px;
     font-size: 14px;
 }
-@media screen and (min-width: 481px) and (max-width: 768px)
-{
-    @font-face {
-        font-family: 'raleway-light';
-        src: url('raleway/Raleway-Light.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'raleway';
-        src: url('raleway/Raleway-Regular.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face{
-        font-family: 'raleway-bold';
-        src: url('raleway/Raleway-Bold.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face{
-        font-family: 'raleway-extrabold';
-        src: url('raleway/Raleway-ExtraBold.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face{
-        font-family: 'raleway-semibold';
-        src: url('raleway/Raleway-SemiBold.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    body {
-        font-size: 12px;
-        font-family: "Raleway";
-        margin: 0px;
-    }
-    #body {
-        max-width: 1320px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    a {
-        text-decoration: none;
-        cursor: pointer;
-    }
-    a:visited { 
-        color: black;
-    }
-    header {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 90px auto 275px 90px;
-        grid-template-areas: "logo . nav sign";
-        height: 96px;
-        padding: 0px 25px 0px 25px;
-    }
-    .logo_header {
-        height: 40px;
-        cursor: pointer;
-        grid-area: logo;
-    }
-    .nav_header {
-        display: flex;
-        justify-content: space-around;
-        grid-area: nav;
-        height: 94px;
-        border-top: 2px solid transparent;
-    }
-    .nav_header_lien {
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-    }
-    .nav_header_lien:hover {
-        transition: border 0.5s ease-out;
-        border-top: 2px solid #0065FC;
-        color: #0065FC;
-    }
-    .sign_header {
-        font-family: "raleway-bold";
-        color: #0065FC ;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 16px;
-        grid-area: sign;
-    }
-    h1 {
-        color: red;
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-    }
-    
-    h2 {
-        margin-left: 15px;
-        font-family: "raleway-extrabold";
-        font-size: 16px;
-    }
-    .hébergement h2 {
-        margin-left: 20px;
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-    }
-    h3 {
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    h4 {
-        margin-left: 15px;
-        font-size: 16px;
-        font-family: "raleway-extrabold";
-    }
-    h1+p {
-        font-family: "raleway-semibold";
-        font-size: 14px;
-    }
-    h3+p {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .fa-star {
-        width: 10px;
-    }
-    .fa-map-marker-alt {
-        font-size: 20px;
-    }
-    #input_filtre_résultat_rechercher {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .input_rechercher {
-        display: flex;
-        margin-bottom: 20px;
-    }
-    .rechercher_gauche {
-        border-radius: 15px 0px 0px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(224, 224, 224);
-        width: 50px;
-        height: 47px;
-    }
-    .rechercher_centre {
-        padding: 0px 20px;
-        width: 180px;
-        height: 45px;
-        border-right: none;
-        border-left: none;
-        border-top: 1px solid #edebeb;
-        border-bottom: 1px solid #edebeb;
-        font-size: 16px;
-    }
-    .rechercher_droite {
-        display: flex;
-        position: relative;
 
-    }
-    .rechercher_droite_bouton {
-        background-color: #0065FC;
-        border: none;
-        border-radius: 0px 15px 15px 0px;
-        height: 48px;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px 10px 0px 10px;
-        cursor: pointer;
-        font-family: 'raleway-semibold';
-        font-size: 14px;
-        width: 90px;
-        z-index: 2;
-        position: absolute;
-}
-.rechercher_droite_loupe {
-    z-index: 1;
-}
-    #rechercher {
-        padding: 0px 25px 0px 25px;
-        margin-bottom: 15px;
-    }
-    .filtre_rechercher h3 {
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-top: 17px;
-        margin-bottom: 0px;
-    }
-    .filtre_rechercher {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-    .filtre {
-        display: flex;
-        align-items: center;
-        height: 48px;
-        border-radius: 25px;
-        cursor: pointer;
-        border: 1px solid #c7c6c6;
-        margin-left: 20px;
-    }
-    .bulle {
-        border-radius: 25px;
-        background-color: #deebff;
-        height: 50px;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -1px;
-    }
-    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-        color: #0065FC;
-        font-size: 15px;
-    }
-    .filtre:hover {
-        background-color: #0065FC;
-        color: white;
-    }
-    .filtre a {
-        font-family: "raleway-extrabold";
-        font-size: 14px;
-        padding: 0 20px;
-    }
-    .résultat_rechercher {
-        display: flex;
-        align-items: center;
-    }
-    .résultat_logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #c7c6c6;
-        border-radius: 25px;
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-    }
-    .fa-info {
-        font-size: 10px;
-        color: #0065FC;
-    }
-    .fa-chart-line{
-        font-size: 30px;
-        margin-top: 10px;
-    }
-    .résultat_texte {
-        margin-left: 5px;
-        font-size: 14px;
-    }
-    #hébergement_aside {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 15px;
-    }
-    .hébergement {
-        width: 60%;
-        border-radius: 15px;
-        background-color: #f2f2f2;
-        padding: 20px 20px 0px 20px;
-        margin-bottom: 15px;
-    }
-    #carte_hébergement {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .carte {
-        display: flex;
-        flex-direction: column;
-        border: 5px solid white;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        width: 222px;
-        height: 184px;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 30px;
-    }
-    .contour_image {
-        height: 58%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .texte_image {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 42%;
-        margin-left: 10px;
-    }
-    .image {
-        object-fit: cover;
-        width: 100%; 
-        height: 100%;
-    }
-    aside {
-        border-radius: 15px;
-        background-color: #f2f2f2;
-        padding: 20px 35px 0px 35px;
-        margin-bottom: 15px;
-    }
-    #texte_carte_populaire {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #carte_aside {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 328px;
-    }
-    .carte_populaire {
-        display: flex;
-        border-radius: 15px;
-        background-color: white;
-        border: 5px solid white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        height: 133px;
-        margin-bottom: 30px;
-        width: 328px;
-    }
-    #texte_carte_populaire h2 {
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-        margin-left: 0;
-    }
-    .contour_image_populaire {
-        width: 40%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .image_populaire {
-        object-fit: cover;
-        height: 100%;
-        width: 122px;
-    }
-    .texte_populaire {
-        width: 50%;
-        height: 95%;
-        margin-left: 15px;
-        margin-top: 10px;
-    }
-    .fa-star {
-        color: #0065FC;
-    }
-    .star-empty {
-        color: #f2f2f2;
-    }
-    .texte_populaire p {
-        margin-bottom: 40px;
-        margin-top: 10px;
-    }
-    #activité {
-        margin-bottom: 15px;
-        padding: 0px 5px;
-    }
-    
-    #activité h3 {
-        text-align: center;
-        margin-left: 15px;
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-bottom: 15px;
-    }
-    .global_carte_activité {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .carte_activité {
-        height: 434px;
-        width: 294px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }  
-    .carte_activité2 {
-        width: 294px;
-        height: 229px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    } 
-    .carte_activité3 {
-        width: 294px;
-        height: 195px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }  
-    .carte_activité4 {
-        width: 294px;
-        height: 168px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .carte_activité5 {
-        width: 294px;
-        height: 200px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }    
-    .contour_image_carte_activité {
-        height: 388px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité2 {
-        height: 184px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité3 {
-        height: 150px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité4 {
-        height: 122px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité5 {
-        height: 154px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .image_carte_activité {
-        object-fit: cover;
-        width: 100%; 
-        height: 100%;
-    } 
-    .conteneur_carte_activité {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    footer {
-        background: #f2f2f2;
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        justify-content: space-around;
-    }
-    #footer {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        width: 1275px;
-    }
-    .nav_footer {
-        display: flex;
-        width: 33%;
-        align-items: self-start;
-        padding-top: 40px;
-    }
-    footer h2 {
-        font-family: "raleway-extrabold";
-        font-size: 18px;
-        margin-bottom: 15px;
-        margin-left: 0px;
-    }
-    footer a {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-}
+@media screen and (min-width: 481px) and (max-width: 1185px)
+{}
+
 @media screen and (max-width: 480px)
 {
-    @font-face {
-        font-family: 'raleway-light';
-        src: url('raleway/Raleway-Light.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'raleway';
-        src: url('raleway/Raleway-Regular.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face{
-        font-family: 'raleway-bold';
-        src: url('raleway/Raleway-Bold.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face{
-        font-family: 'raleway-extrabold';
-        src: url('raleway/Raleway-ExtraBold.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face{
-        font-family: 'raleway-semibold';
-        src: url('raleway/Raleway-SemiBold.ttf');
-        font-weight: normal;
-        font-style: normal;
-    }
-    body {
-        font-size: 12px;
-        font-family: "Raleway";
-        margin: 0px;
-    }
-    #body {
-        max-width: 1320px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    a {
-        text-decoration: none;
-        cursor: pointer;
-    }
-    a:visited { 
-        color: black;
-    }
-    header {
-        display: grid;
-        align-items: center;
+    header 
+    {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 80px 80px;
         grid-template-areas: "logo sign" "nav nav";
@@ -1063,210 +516,78 @@ footer a {
     }
     .logo_header {
         height: 60px;
-        cursor: pointer;
-        grid-area: logo;
         padding-left: 20px;
     }
     .nav_header {
-        display: flex;
-        justify-content: space-around;
-        grid-area: nav;
         height: 60px;
-        border-bottom: 2px solid transparent;
     }
     .nav_header_lien {
-        display: flex;
-        align-items: center;
         font-size: 20px;
         width: 240px;
-        justify-content: center;
     }
     .nav_header_lien:hover {
-        transition: border 0.5s ease-out;
         border-bottom: 2px solid #0065FC;
-        color: #0065FC;
         border-top: none;
     }
     .sign_header {
-        font-family: "raleway-bold";
-        color: #0065FC ;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
         font-size: 20px;
-        grid-area: sign;
         padding-right: 20px;
     }
     h1 {
-        color: blue;
-    font-family: "raleway-extrabold";
-    font-size: 27px;
-    }
-    
-    h2 {
-        margin-left: 15px;
-        font-family: "raleway-extrabold";
-        font-size: 16px;
-    }
-    .hébergement h2 {
-        margin-left: 20px;
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-    }
-    h3 {
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    h4 {
-        margin-left: 15px;
-        font-size: 16px;
-        font-family: "raleway-extrabold";
+        font-size: 27px;
     }
     h1+p {
-        font-family: "raleway-semibold";
-    font-size: 20px;
-    }
-    h3+p {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .fa-star {
-        width: 10px;
-    }
-    .fa-map-marker-alt {
         font-size: 20px;
     }
-    #input_filtre_résultat_rechercher {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
     .input_rechercher {
-        display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 10px;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
     .rechercher_gauche {
-        border-radius: 15px 0px 0px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(224, 224, 224);
-    width: 57px;
-    height: 57px;
+        width: 57px;
+        height: 57px;
     }
     .rechercher_centre {
-        padding: 0px 20px;
-    width: 291px;
-    height: 55px;
-    border-right: none;
-    border-left: none;
-    border-top: 1px solid #edebeb;
-    border-bottom: 1px solid #edebeb;
-    font-size: 25px;
+        width: 65%;
+        height: 55px;
+        font-size: 25px;
     }
     .rechercher_droite {
         margin-left: -15px;
-    display: flex;
-    position: relative;
+
     }
     .rechercher_droite_bouton {
-        background-color: #0065FC;
-        border: none;
         border-radius: 15px;
         height: 57px;
+        width: 37px;
+        z-index: 1;
+    }
+    .rechercher_droite_loupe {
+        z-index: 2;
+        height: 57px;
+        font-size: 18px;
         color: white;
+        background-color: #0065FC;
+        border-radius: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0px 10px 0px 10px;
         cursor: pointer;
-        font-family: 'raleway-semibold';
-        font-size: 14px;
         width: 37px;
-        z-index: 1;
-        position: absolute;
-    }
-.rechercher_droite_loupe {
-    z-index: 2;
-    height: 57px;
-    font-size: 18px;
-    color: white;
-    background-color: #0065FC;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10px 0px 10px;
-    cursor: pointer;
-    width: 37px;
-    }
-    #rechercher {
-        padding: 0px 25px 0px 25px;
-        margin-bottom: 15px;
     }
     .filtre_rechercher h3 {
-        font-family: 'raleway-extrabold';
-    font-size: 20px;
-    margin-top: 17px;
-    margin-bottom: 10px;
-    margin-right: 193px;
-    }
-    .filtre_rechercher {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-right: 193px;
     }
     .filtre {
-        display: flex;
-    align-items: center;
-    height: 48px;
-    border-radius: 25px;
-    cursor: pointer;
-    border: 1px solid #c7c6c6;
-    margin-left: 0px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    }
-    .bulle {
-        border-radius: 25px;
-    background-color: #deebff;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -1px;
-    }
-    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-        color: #0065FC;
-        font-size: 15px;
-    }
-    .filtre:hover {
-        background-color: #0065FC;
-        color: white;
+        margin-left: 0px;
+        margin-right: 15px;
+        margin-bottom: 15px;
     }
     .filtre a {
-        font-family: "raleway-extrabold";
-    font-size: 21px;
-    padding: 0 20px;
-    }
-    .résultat_rechercher {
-        display: flex;
-        align-items: center;
-    }
-    .résultat_logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #c7c6c6;
-        border-radius: 25px;
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
+        font-size: 21px;
     }
     .fa-info {
         font-size: 10px;
@@ -1278,252 +599,6 @@ footer a {
     }
     .résultat_texte {
         margin-left: 5px;
-        font-size: 14px;
-    }
-    #hébergement_aside {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 15px;
-    }
-    .hébergement {
-        width: 60%;
-        border-radius: 15px;
-        background-color: #f2f2f2;
-        padding: 20px 20px 0px 20px;
-        margin-bottom: 15px;
-    }
-    #carte_hébergement {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .carte {
-        display: flex;
-        flex-direction: column;
-        border: 5px solid white;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        width: 222px;
-        height: 184px;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 30px;
-    }
-    .contour_image {
-        height: 58%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .texte_image {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 42%;
-        margin-left: 10px;
-    }
-    .image {
-        object-fit: cover;
-        width: 100%; 
-        height: 100%;
-    }
-    aside {
-        border-radius: 15px;
-        background-color: #f2f2f2;
-        padding: 20px 35px 0px 35px;
-        margin-bottom: 15px;
-    }
-    #texte_carte_populaire {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #carte_aside {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 328px;
-    }
-    .carte_populaire {
-        display: flex;
-        border-radius: 15px;
-        background-color: white;
-        border: 5px solid white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        height: 133px;
-        margin-bottom: 30px;
-        width: 328px;
-    }
-    #texte_carte_populaire h2 {
-        font-family: "raleway-extrabold";
-        font-size: 20px;
-        margin-left: 0;
-    }
-    .contour_image_populaire {
-        width: 40%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .image_populaire {
-        object-fit: cover;
-        height: 100%;
-        width: 122px;
-    }
-    .texte_populaire {
-        width: 50%;
-        height: 95%;
-        margin-left: 15px;
-        margin-top: 10px;
-    }
-    .fa-star {
-        color: #0065FC;
-    }
-    .star-empty {
-        color: #f2f2f2;
-    }
-    .texte_populaire p {
-        margin-bottom: 40px;
-        margin-top: 10px;
-    }
-    #activité {
-        margin-bottom: 15px;
-        padding: 0px 5px;
-    }
-    
-    #activité h3 {
-        margin-left: 15px;
-        font-family: 'raleway-extrabold';
-        font-size: 15px;
-        margin-bottom: 15px;
-    }
-    .global_carte_activité {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .carte_activité {
-        height: 434px;
-        width: 294px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }  
-    .carte_activité2 {
-        width: 294px;
-        height: 229px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    } 
-    .carte_activité3 {
-        width: 294px;
-        height: 195px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }  
-    .carte_activité4 {
-        width: 294px;
-        height: 168px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .carte_activité5 {
-        width: 294px;
-        height: 200px;
-        border-radius: 15px;
-        background-color: white;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }    
-    .contour_image_carte_activité {
-        height: 388px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité2 {
-        height: 184px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité3 {
-        height: 150px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité4 {
-        height: 122px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .contour_image_carte_activité5 {
-        height: 154px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .image_carte_activité {
-        object-fit: cover;
-        width: 100%; 
-        height: 100%;
-    } 
-    .conteneur_carte_activité {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    footer {
-        background: #f2f2f2;
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        justify-content: space-around;
-    }
-    #footer {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        width: 1275px;
-    }
-    .nav_footer {
-        display: flex;
-        width: 33%;
-        align-items: self-start;
-        padding-top: 40px;
-    }
-    footer h2 {
-        font-family: "raleway-extrabold";
-        font-size: 18px;
-        margin-bottom: 15px;
-        margin-left: 0px;
-    }
-    footer a {
-        margin-bottom: 10px;
         font-size: 14px;
     }
 }
