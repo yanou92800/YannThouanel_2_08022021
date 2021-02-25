@@ -90,7 +90,7 @@ h2 {
     font-size: 1.2vw;
 }
 .hébergement h2 {
-    margin-left: 20px;
+    margin-left: 1.5vw;
     font-family: "raleway-extrabold";
     font-size: 1.5vw;
 }
@@ -362,9 +362,9 @@ aside {
 }
 
 #activité h3 {
-    margin-left: 15px;
+    margin-left: 1.2vw;
     font-family: 'raleway-extrabold';
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     margin-bottom: 1.1vw;
 }
 .global_carte_activité {
