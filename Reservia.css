@@ -61,9 +61,11 @@ header {
 }
 .nav_header_lien {
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 1.2vw;
     border-top: 2px solid transparent;
+    width: 100%;
 }
 .nav_header_lien:hover {
     transition: border 0.5s ease-out;
@@ -140,18 +142,16 @@ h3+p {
 .rechercher_centre {
     padding: 0px 20px;
     width: 12.7vw;
-    height: 3.15vw;
     border-right: none;
     border-left: none;
     border-top: 1px solid #edebeb;
     border-bottom: 1px solid #edebeb;
     font-size: 1.1vw;
 }
-    .rechercher_droite {
-        display: flex;
-        position: relative;
-
-    }
+.rechercher_droite {
+    display: flex;
+    position: relative;
+}
 .rechercher_droite_bouton {
     background-color: #0065FC;
     border: none;
@@ -211,8 +211,8 @@ h3+p {
     font-size: 1.1vw;
 }
 .filtre:hover {
-background-color: #0065FC;
-color: white;
+    background-color: #0065FC;
+    color: white;
 }
 .filtre a {
     font-family: "raleway-extrabold";
@@ -499,119 +499,186 @@ footer a {
     font-size: 1vw;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1185px)
-{}
-
 @media screen and (max-width: 480px)
 {
-    header 
-    {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 15vw 15vw;
-        grid-template-areas: "logo sign" "nav nav";
-        height: 40vw;
-        padding: 4vw 0;
+    body {
+        font-size: 12px;
+    }
+    header {
+        grid-template-columns: 90px auto 275px 90px;
+        height: 96px;
+        padding: 0 25px;
     }
     .logo_header {
-        height: 15vw;
-        padding-left: 4vw;
+        height: 40px;
     }
     .nav_header {
-        height: 15vw;
+        height: 94px;
     }
     .nav_header_lien {
-        display: flex;
-        justify-content: center;
-        font-size: 5vw;
-        width: 60vw;
-    }
-    .nav_header_lien:hover {
-        border-bottom: 2px solid #0065FC;
-        border-top: none;
+        font-size: 16px;
     }
     .sign_header {
-        font-size: 5vw;
-        padding-right: 5vw;
+        font-size: 16px;
     }
-    h1 {
-        font-size: 7vw;
+    h2 {
+        font-size: 16px;
+    }
+    .hébergement h2 {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    h4 {
+        font-size: 16px;
+        font-family: "raleway-extrabold";
     }
     h1+p {
-        font-size: 5vw;
+        font-size: 14px;
     }
-    .input_rechercher {
-        justify-content: center;
-        margin-bottom: 7vw;
-        margin-top: 2vw;
+    .fa-star {
+        width: 10px;
+    }
+    .fa-map-marker-alt {
+        font-size: 20px;
     }
     .rechercher_gauche {
-        width: 14vw;
-        height: 14vw;
+        border-radius: 15px 0px 0px 15px;
+        width: 50px;
+        height: 50px;
     }
     .rechercher_centre {
-        width: 65%;
-        height: 14vw;
-        font-size: 6vw;
-    }
-    .rechercher_droite {
-        margin-left: -4vw;
-
+        width: 180px;
+        font-size: 16px;
     }
     .rechercher_droite_bouton {
-        border-radius: 4vw;
-        height: 14vw;
-        width: 9vw;
+        border-radius: 0 15px 15px 0;
+        height: 48px;
+        font-size: 14px;
+        width: 90px;
         z-index: 1;
     }
     .rechercher_droite_loupe {
         z-index: 2;
-        height: 14vw;
-        font-size: 18px;
-        color: white;
-        background-color: #0065FC;
-        border-radius: 4vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 2vw;
-        cursor: pointer;
-        width: 9vw;
+    }
+    #rechercher {
+        padding: 0px 25px 0px 25px;
     }
     .filtre_rechercher h3 {
-        font-size: 5vw;
-        margin-right: 48vw;
+        font-size: 15px;
+    }
+    .filtre_rechercher {
+        margin-bottom: 20px;
     }
     .filtre {
-        margin-left: 0;
-        margin-right: 4vw;
-        margin-bottom: 4vw;
+        height: 48px;
+        border-radius: 25px;
+        margin-left: 20px;
+    }
+    .bulle {
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+        font-size: 15px;
     }
     .filtre a {
-        font-size: 5vw;
+        font-size: 14px;
+    }
+    .résultat_logo {
+        border-radius: 25px;
+        width: 20px;
+        height: 20px;
     }
     .fa-info {
-        font-size: 2.5vw;
-        color: #0065FC;
+        font-size: 10px;;
     }
     .fa-chart-line{
-        font-size: 7vw;
-        margin-top: 2vw;
+        font-size: 30px;
     }
     .résultat_texte {
-        margin-left: 1vw;
-        font-size: 3.5vw;
+        font-size: 14px;
+    }
+    .hébergement {
+        border-radius: 15px;
+    }
+    .carte {
+        border-radius: 15px;
+        width: 222px;
+        height: 184px;
     }
     aside {
-        border-radius: 0;
-        padding: 4vw 4vw 0 4vw;
-    }
-    .carte_populaire {
-        width: 100%;
+        border-radius: 15px;
     }
     #carte_aside {
-        width:100%
+        width: 328px;
     }
-    main {
-        margin-top: -13vw;
+    .carte_populaire {
+        border-radius: 15px;
+        height: 133px;
+        width: 328px;
+    }
+    #texte_carte_populaire h2 {
+        font-size: 20px;
+    }
+    .image_populaire {
+        width: 122px;
+    }
+    #activité h3 {
+        margin-left: 15px;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .carte_activité {
+        height: 434px;
+        width: 294px;
+        border-radius: 15px;
+    }  
+    .carte_activité2 {
+        width: 294px;
+        height: 229px;
+        border-radius: 15px;
+    } 
+    .carte_activité3 {
+        width: 294px;
+        height: 195px;
+        border-radius: 15px;
+    }  
+    .carte_activité4 {
+        width: 294px;
+        height: 168px;
+        border-radius: 15px;
+    }
+    .carte_activité5 {
+        width: 294px;
+        height: 200px;
+        border-radius: 15px;
+    }    
+    .contour_image_carte_activité {
+        height: 388px;
+    }
+    .contour_image_carte_activité2 {
+        height: 184px;
+    }
+    .contour_image_carte_activité3 {
+        height: 150px;
+    }
+    .contour_image_carte_activité4 {
+        height: 122px;
+    }
+    .contour_image_carte_activité5 {
+        height: 154px;
+    }
+    #footer {
+        width: 1320px;
+    }
+    footer h2 {
+        font-size: 18px;
+    }
+    footer a {
+        font-size: 14px;
     }
 }
