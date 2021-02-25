@@ -505,21 +505,34 @@ footer a {
         font-size: 12px;
     }
     header {
-        grid-template-columns: 90px auto 275px 90px;
-        height: 96px;
-        padding: 0 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15vw 15vw;
+        grid-template-areas: "logo sign" "nav nav";
+        height: 40vw;
+        padding: 4vw 0;
     }
     .logo_header {
-        height: 40px;
+        height: 15vw;
+        padding-left: 4vw;
     }
     .nav_header {
-        height: 94px;
+        height: 15vw;
     }
     .nav_header_lien {
-        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+        width: 60vw;
     }
     .sign_header {
-        font-size: 16px;
+        font-size: 5vw;
+        padding-right: 5vw;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    h1+p {
+        font-size: 5vw;
     }
     h2 {
         font-size: 16px;
@@ -544,38 +557,58 @@ footer a {
     .fa-map-marker-alt {
         font-size: 20px;
     }
+    .input_rechercher {
+        justify-content: center;
+        margin-bottom: 7vw;
+        margin-top: 2vw;
+    }
     .rechercher_gauche {
         border-radius: 15px 0px 0px 15px;
-        width: 50px;
-        height: 50px;
+        width: 14vw;
+        height: 14vw;
     }
     .rechercher_centre {
-        width: 180px;
-        font-size: 16px;
+        width: 65%;
+        height: 14vw;
+        font-size: 6vw;
     }
     .rechercher_droite_bouton {
-        border-radius: 0 15px 15px 0;
-        height: 48px;
+        border-radius: 4vw;
+        height: 14vw;
+        width: 8vw;
         font-size: 14px;
-        width: 90px;
         z-index: 1;
     }
     .rechercher_droite_loupe {
         z-index: 2;
+        height: 14vw;
+        font-size: 18px;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2vw;
+        cursor: pointer;
+        width: 9vw;
     }
     #rechercher {
         padding: 0px 25px 0px 25px;
     }
     .filtre_rechercher h3 {
-        font-size: 15px;
+        font-size: 5vw;
+        margin-right: 48vw;
     }
     .filtre_rechercher {
-        margin-bottom: 20px;
+        height: auto;
     }
     .filtre {
         height: 48px;
         border-radius: 25px;
-        margin-left: 20px;
+        margin-left: 0;
+        margin-right: 4vw;
+        margin-bottom: 4vw;
     }
     .bulle {
         height: 50px;
@@ -586,7 +619,7 @@ footer a {
         font-size: 15px;
     }
     .filtre a {
-        font-size: 14px;
+        font-size: 5vw;
     }
     .résultat_logo {
         border-radius: 25px;
@@ -594,13 +627,16 @@ footer a {
         height: 20px;
     }
     .fa-info {
-        font-size: 10px;;
+        font-size: 2.5vw;
+        color: #0065FC;
     }
     .fa-chart-line{
-        font-size: 30px;
+        font-size: 7vw;
+        margin-top: 2vw;
     }
     .résultat_texte {
-        font-size: 14px;
+        margin-left: 1vw;
+        font-size: 3.5vw;
     }
     .hébergement {
         border-radius: 15px;
@@ -611,18 +647,23 @@ footer a {
         height: 184px;
     }
     aside {
-        border-radius: 15px;
+        border-radius: 0;
+        padding: 4vw 4vw 0 4vw;
     }
     #carte_aside {
-        width: 328px;
+        width: 100%;
     }
     .carte_populaire {
         border-radius: 15px;
         height: 133px;
-        width: 328px;
+        width: 100%
     }
     #texte_carte_populaire h2 {
         font-size: 20px;
+    }
+    .texte_populaire+span {
+        margin-left: 39.7vw;
+        margin-top: 29.5vw;
     }
     .image_populaire {
         width: 122px;
@@ -675,10 +716,16 @@ footer a {
     #footer {
         width: 1320px;
     }
+    .nav_footer {
+        width: 100%;
+    }
     footer h2 {
         font-size: 18px;
     }
     footer a {
         font-size: 14px;
+    }
+    main {
+        margin-top: -13vw;
     }
 }
