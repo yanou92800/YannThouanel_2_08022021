@@ -29,14 +29,9 @@
     font-style: normal;
 }
 body {
-    font-size: 12px;
+    font-size: 0.9vw;
     font-family: "Raleway";
-    margin: 0px;  
-}
-#body {
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;  
 }
 a {
     text-decoration: none;
@@ -48,13 +43,13 @@ a:visited {
 header {
     display: grid;
     align-items: center;
-    grid-template-columns: 90px auto 275px 90px;
+    grid-template-columns: 6.8vw auto 20.7vw 6.8vw;
     grid-template-areas: "logo . nav sign";
-    height: 96px;
-    padding: 0px 25px 0px 25px;
+    height: 7.2vw;
+    padding: 0 2.5%;
 }
 .logo_header {
-    height: 40px;
+    height: 3vw;
     cursor: pointer;
     grid-area: logo;
 }
@@ -62,12 +57,12 @@ header {
     display: flex;
     justify-content: space-around;
     grid-area: nav;
-    height: 94px;
+    height: 7.1vw;
 }
 .nav_header_lien {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.2vw;
     border-top: 2px solid transparent;
 }
 .nav_header_lien:hover {
@@ -81,48 +76,48 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.2vw;
     grid-area: sign;
 }
 h1 {
     font-family: "raleway-extrabold";
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 h2 {
     margin-left: 15px;
     font-family: "raleway-extrabold";
-    font-size: 16px;
+    font-size: 1.2vw;
 }
 .hébergement h2 {
     margin-left: 20px;
     font-family: "raleway-extrabold";
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 h3 {
     font-family: 'raleway-extrabold';
-    font-size: 15px;
+    font-size: 1.1vw;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 h4 {
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-family: "raleway-extrabold";
 }
 h1+p {
     font-family: "raleway-semibold";
-    font-size: 14px;
+    font-size: 1.1vw;
 }
 h3+p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 .fa-star {
-    width: 10px;
+    width: 0.8vw;
 }
 .fa-map-marker-alt {
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 #input_filtre_résultat_rechercher {
     display: flex;
@@ -139,18 +134,18 @@ h3+p {
     align-items: center;
     justify-content: center;
     background-color: rgb(224, 224, 224);
-    width: 50px;
-    height: 47px;
+    width: 3.3vw;
+    height: 3.3vw;
 }
 .rechercher_centre {
     padding: 0px 20px;
-    width: 180px;
-    height: 45px;
+    width: 12.7vw;
+    height: 3.3vw;
     border-right: none;
     border-left: none;
     border-top: 1px solid #edebeb;
     border-bottom: 1px solid #edebeb;
-    font-size: 16px;
+    font-size: 1.1vw;
 }
     .rechercher_droite {
         display: flex;
@@ -161,16 +156,16 @@ h3+p {
     background-color: #0065FC;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    height: 48px;
+    height: 3.3vw;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px;
     cursor: pointer;
     font-family: 'raleway-semibold';
-    font-size: 14px;
-    width: 90px;
+    font-size: 1vw;
+    width: 7.5vw;
     z-index: 2;
     position: absolute;
 }
@@ -178,12 +173,12 @@ h3+p {
     z-index: 1;
 }
 #rechercher {
-    padding: 0px 25px 0px 25px;
+    padding: 0 2.5%;
     margin-bottom: 15px;
 }
 .filtre_rechercher h3 {
     font-family: 'raleway-extrabold';
-    font-size: 15px;
+    font-size: 1.1vw;
     margin-top: 17px;
     margin-bottom: 0px;
 }
@@ -191,20 +186,21 @@ h3+p {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    height: 6vw;
 }
 .filtre {
     display: flex;
     align-items: center;
-    height: 48px;
-    border-radius: 25px;
+    height: 3.6vw;
+    border-radius: 1.8vw;
     cursor: pointer;
     border: 1px solid #c7c6c6;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 .bulle {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
+    height: 3.7vw;
+    width: 3.7vw;
+    border-radius: 100%;
     background-color: #deebff;
     display: flex;
     justify-content: center;
@@ -213,7 +209,7 @@ h3+p {
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
     color: #0065FC;
-    font-size: 15px;
+    font-size: 1.1vw;
 }
 .filtre:hover {
 background-color: #0065FC;
@@ -221,7 +217,7 @@ color: white;
 }
 .filtre a {
     font-family: "raleway-extrabold";
-    font-size: 14px;
+    font-size: 1vw;
     padding: 0 20px;
 }
 .résultat_rechercher {
@@ -235,20 +231,20 @@ color: white;
     border: 1px solid #c7c6c6;
     border-radius: 25px;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 1.5vw;
+    height: 1.5vw;
 }
 .fa-info {
-    font-size: 10px;
+    font-size: 0.7vw;
     color: #0065FC;
 }
 .fa-chart-line{
-    font-size: 30px;
+    font-size: 2.2vw;
     margin-top: 10px;
 }
 .résultat_texte {
     margin-left: 5px;
-    font-size: 14px;
+    font-size: 1vw;
 }
 #hébergement_aside {
     display: flex;
@@ -275,8 +271,8 @@ color: white;
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
-    width: 222px;
-    height: 184px;
+    width: 16.7vw;
+    height: 13.8vw;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
     margin-bottom: 30px;
 }
@@ -312,7 +308,7 @@ aside {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 328px;
+    width: 24.7vw;
 }
 .carte_populaire {
     display: flex;
@@ -321,13 +317,13 @@ aside {
     border: 5px solid white;
     overflow: hidden;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-    height: 133px;
+    height: 10vw;
     margin-bottom: 30px;
-    width: 328px;
+    width: 100%;
 }
 #texte_carte_populaire h2 {
     font-family: "raleway-extrabold";
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-left: 0;
 }
 .contour_image_populaire {
@@ -338,7 +334,7 @@ aside {
 .image_populaire {
     object-fit: cover;
     height: 100%;
-    width: 122px;
+    width: 9.2vw;
 }
 .texte_populaire {
     width: 50%;
@@ -356,16 +352,21 @@ aside {
     margin-bottom: 40px;
     margin-top: 10px;
 }
+.texte_populaire+span {
+    position: absolute;
+    margin-left: 10.7vw;
+    margin-top: 8.5vw;  
+}
 #activité {
     margin-bottom: 15px;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 #activité h3 {
     margin-left: 15px;
     font-family: 'raleway-extrabold';
     font-size: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 1.1vw;
 }
 .global_carte_activité {
     display: flex;
@@ -373,8 +374,8 @@ aside {
     justify-content: space-around;
 }
 .carte_activité {
-    height: 434px;
-    width: 294px;
+    height: 32.6vw;
+    width: 22.1vw;
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
@@ -385,8 +386,8 @@ aside {
     justify-content: space-between;
 }  
 .carte_activité2 {
-    width: 294px;
-    height: 229px;
+    width: 22.1vw;
+    height: 17.2vw;
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
@@ -397,8 +398,8 @@ aside {
     justify-content: space-between;
 } 
 .carte_activité3 {
-    width: 294px;
-    height: 195px;
+    width: 22.1vw;
+    height: 14.7vw;
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
@@ -409,8 +410,8 @@ aside {
     justify-content: space-between;
 }  
 .carte_activité4 {
-    width: 294px;
-    height: 168px;
+    width: 22.1vw;
+    height: 12.6vw;
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
@@ -421,8 +422,8 @@ aside {
     justify-content: space-between;
 }
 .carte_activité5 {
-    width: 294px;
-    height: 200px;
+    width: 22.1vw;
+    height: 15vw;
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
@@ -433,27 +434,27 @@ aside {
     justify-content: space-between;
 }    
 .contour_image_carte_activité {
-    height: 388px;
+    height: 29.2vw;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 .contour_image_carte_activité2 {
-    height: 184px;
+    height: 13.8vw;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 .contour_image_carte_activité3 {
-    height: 150px;
+    height: 11.3vw;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 .contour_image_carte_activité4 {
-    height: 122px;
+    height: 9.2vw;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 .contour_image_carte_activité5 {
-    height: 154px;
+    height: 11.6vw;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -478,7 +479,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: 1320px;
+    width: 100%;
     padding: 20px;
 }
 .nav_footer {
@@ -490,13 +491,13 @@ footer {
 }
 footer h2 {
     font-family: "raleway-extrabold";
-    font-size: 18px;
+    font-size: 1.3vw;
     margin-bottom: 15px;
     margin-left: 0px;
 }
 footer a {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 1vw;
 }
 
 @media screen and (min-width: 481px) and (max-width: 1185px)
