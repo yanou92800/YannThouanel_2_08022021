@@ -129,7 +129,7 @@ h3+p {
     margin-bottom: 20px;
 }
 .rechercher_gauche {
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 1.1vw 0 0 1.1vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +140,7 @@ h3+p {
 .rechercher_centre {
     padding: 0px 20px;
     width: 12.7vw;
-    height: 3.3vw;
+    height: 3.1vw;
     border-right: none;
     border-left: none;
     border-top: 1px solid #edebeb;
@@ -155,7 +155,7 @@ h3+p {
 .rechercher_droite_bouton {
     background-color: #0065FC;
     border: none;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0 1.1vw 1.1vw 0;
     height: 3.3vw;
     color: white;
     display: flex;
@@ -185,13 +185,12 @@ h3+p {
 .filtre_rechercher {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
     height: 6vw;
 }
 .filtre {
     display: flex;
     align-items: center;
-    height: 3.6vw;
+    height: 3.5vw;
     border-radius: 1.8vw;
     cursor: pointer;
     border: 1px solid #c7c6c6;
@@ -229,7 +228,7 @@ color: white;
     justify-content: center;
     align-items: center;
     border: 1px solid #c7c6c6;
-    border-radius: 25px;
+    border-radius: 1.9vw;
     cursor: pointer;
     width: 1.5vw;
     height: 1.5vw;
@@ -254,7 +253,7 @@ color: white;
 }
 .hébergement {
     width: 60%;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: #f2f2f2;
     padding: 20px 20px 0px 20px;
     margin-bottom: 15px;
@@ -268,7 +267,7 @@ color: white;
     display: flex;
     flex-direction: column;
     border: 5px solid white;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: white;
     overflow: hidden;
     width: 16.7vw;
@@ -294,7 +293,7 @@ color: white;
     height: 100%;
 }
 aside {
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: #f2f2f2;
     padding: 20px 35px 0px 35px;
     margin-bottom: 15px;
@@ -312,7 +311,7 @@ aside {
 }
 .carte_populaire {
     display: flex;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: white;
     border: 5px solid white;
     overflow: hidden;
@@ -365,7 +364,7 @@ aside {
 #activité h3 {
     margin-left: 15px;
     font-family: 'raleway-extrabold';
-    font-size: 15px;
+    font-size: 1.1vw;
     margin-bottom: 1.1vw;
 }
 .global_carte_activité {
@@ -376,7 +375,7 @@ aside {
 .carte_activité {
     height: 32.6vw;
     width: 22.1vw;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: white;
     overflow: hidden;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
@@ -388,7 +387,7 @@ aside {
 .carte_activité2 {
     width: 22.1vw;
     height: 17.2vw;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: white;
     overflow: hidden;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
@@ -400,7 +399,7 @@ aside {
 .carte_activité3 {
     width: 22.1vw;
     height: 14.7vw;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: white;
     overflow: hidden;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
@@ -412,7 +411,7 @@ aside {
 .carte_activité4 {
     width: 22.1vw;
     height: 12.6vw;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: white;
     overflow: hidden;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
@@ -424,7 +423,7 @@ aside {
 .carte_activité5 {
     width: 22.1vw;
     height: 15vw;
-    border-radius: 15px;
+    border-radius: 1.1vw;
     background-color: white;
     overflow: hidden;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
