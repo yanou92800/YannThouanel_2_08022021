@@ -1,10 +1,4 @@
 @font-face {
-    font-family: 'raleway-light';
-    src: url('raleway/Raleway-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'raleway';
     src: url('raleway/Raleway-Regular.ttf');
     font-weight: normal;
@@ -16,21 +10,9 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face{
-    font-family: 'raleway-extrabold';
-    src: url('raleway/Raleway-ExtraBold.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face{
-    font-family: 'raleway-semibold';
-    src: url('raleway/Raleway-SemiBold.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 body {
-    font-size: 0.9vw;
     font-family: "Raleway";
+    font-size: 0.9vw;
     margin: 0;  
 }
 a {
@@ -64,12 +46,13 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.2vw;
-    border-top: 2px solid transparent;
+    border-top: 0.1vw solid transparent;
     width: 100%;
+    color: black;
 }
 .nav_header_lien:hover {
     transition: border 0.5s ease-out;
-    border-top: 2px solid #0065FC;
+    border-top: 0.1vw solid #0065FC;
     color: #0065FC;
 }
 .sign_header {
@@ -82,22 +65,23 @@ header {
     grid-area: sign;
 }
 h1 {
-    font-family: "raleway-extrabold";
+    font-family: "raleway-bold";
     font-size: 1.5vw;
+    margin-bottom: 0px;
 }
 
 h2 {
     margin-left: 15px;
-    font-family: "raleway-extrabold";
+    font-family: "raleway-bold";
     font-size: 1.2vw;
 }
 .hébergement h2 {
     margin-left: 1.5vw;
-    font-family: "raleway-extrabold";
+    font-family: "raleway-bold";
     font-size: 1.5vw;
 }
 h3 {
-    font-family: 'raleway-extrabold';
+    font-family: 'raleway-bold';
     font-size: 1.1vw;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -105,11 +89,11 @@ h3 {
 h4 {
     margin-left: 15px;
     font-size: 1.2vw;
-    font-family: "raleway-extrabold";
+    font-family: "raleway-bold";
 }
 h1+p {
-    font-family: "raleway-semibold";
     font-size: 1.1vw;
+    margin-top: 0.5vw;
 }
 h3+p {
     margin-top: 0px;
@@ -128,7 +112,7 @@ h3+p {
 }
 .input_rechercher {
     display: flex;
-    margin-bottom: 20px;
+    margin: 0.5vw 0 1.5vw 0;
 }
 .rechercher_gauche {
     border-radius: 1.1vw 0 0 1.1vw;
@@ -163,7 +147,7 @@ h3+p {
     justify-content: center;
     padding: 0 10px;
     cursor: pointer;
-    font-family: 'raleway-semibold';
+    font-family: 'raleway-bold';
     font-size: 1vw;
     width: 7.5vw;
     z-index: 2;
@@ -177,7 +161,7 @@ h3+p {
     margin-bottom: 15px;
 }
 .filtre_rechercher h3 {
-    font-family: 'raleway-extrabold';
+    font-family: 'raleway-bold';
     font-size: 1.1vw;
     margin-top: 17px;
     margin-bottom: 0px;
@@ -185,7 +169,7 @@ h3+p {
 .filtre_rechercher {
     display: flex;
     flex-wrap: wrap;
-    height: 6vw;
+    height: 5vw;
 }
 .filtre {
     display: flex;
@@ -208,14 +192,14 @@ h3+p {
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
     color: #0065FC;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
 }
 .filtre:hover {
     background-color: #0065FC;
     color: white;
 }
 .filtre a {
-    font-family: "raleway-extrabold";
+    font-family: "raleway-bold";
     font-size: 1vw;
     padding: 0 20px;
 }
@@ -239,7 +223,7 @@ h3+p {
 }
 .fa-chart-line{
     font-size: 2.2vw;
-    margin-top: 10px;
+    margin-top: 1vw;
 }
 .résultat_texte {
     margin-left: 5px;
@@ -249,7 +233,7 @@ h3+p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 .hébergement {
     width: 60%;
@@ -295,7 +279,7 @@ h3+p {
 aside {
     border-radius: 1.1vw;
     background-color: #f2f2f2;
-    padding: 20px 35px 0px 35px;
+    padding: 20px 2.5vw 0 2.5vw;
     margin-bottom: 15px;
 }
 #texte_carte_populaire {
@@ -321,7 +305,7 @@ aside {
     width: 100%;
 }
 #texte_carte_populaire h2 {
-    font-family: "raleway-extrabold";
+    font-family: "raleway-bold";
     font-size: 1.5vw;
     margin-left: 0;
 }
@@ -357,13 +341,13 @@ aside {
     margin-top: 8.5vw;  
 }
 #activité {
-    margin-bottom: 15px;
+    margin-bottom: 2.5vw;
     padding: 0 5px;
 }
 
 #activité h3 {
     margin-left: 1.5vw;
-    font-family: 'raleway-extrabold';
+    font-family: 'raleway-bold';
     font-size: 1.3vw;
     margin-bottom: 1.1vw;
 }
@@ -489,13 +473,13 @@ footer {
     flex-direction: column;
 }
 footer h2 {
-    font-family: "raleway-extrabold";
+    font-family: "raleway-bold";
     font-size: 1.3vw;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
     margin-left: 0px;
 }
 footer a {
-    margin-bottom: 10px;
+    margin-bottom: 0.8vw;
     font-size: 1vw;
 }
 
@@ -523,6 +507,13 @@ footer a {
         justify-content: center;
         font-size: 5vw;
         width: 60vw;
+        border-bottom: 2px solid grey;
+        border-top: none;
+    }
+    .nav_header_lien:hover {
+        transition: border 0.5s ease-out;
+        border-top: 2px solid #0065FC;
+        color: #0065FC;
     }
     .sign_header {
         font-size: 5vw;
@@ -546,7 +537,7 @@ footer a {
     }
     h4 {
         font-size: 16px;
-        font-family: "raleway-extrabold";
+        font-family: "raleway-bold";
     }
     h1+p {
         font-size: 14px;
