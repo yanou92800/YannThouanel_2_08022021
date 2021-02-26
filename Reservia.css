@@ -487,6 +487,7 @@ footer a {
 {
     body {
         font-size: 12px;
+        width: 100%;
     }
     header {
         grid-template-columns: 1fr 1fr;
@@ -507,20 +508,24 @@ footer a {
         justify-content: center;
         font-size: 5vw;
         width: 60vw;
-        border-bottom: 2px solid grey;
+        border-bottom: 2px solid #f2f2f2;
         border-top: none;
     }
     .nav_header_lien:hover {
         transition: border 0.5s ease-out;
         border-top: 2px solid #0065FC;
         color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
     }
     .sign_header {
         font-size: 5vw;
         padding-right: 5vw;
     }
     h1 {
-        font-size: 7vw;
+        font-size: 6vw;
+        width: 95%;
+        margin-bottom: 3vw;
     }
     h1+p {
         font-size: 5vw;
@@ -540,13 +545,13 @@ footer a {
         font-family: "raleway-bold";
     }
     h1+p {
-        font-size: 14px;
+        font-size: 4.3vw;
     }
     .fa-star {
         width: 10px;
     }
     .fa-map-marker-alt {
-        font-size: 20px;
+        font-size: 5vw;
     }
     .input_rechercher {
         justify-content: center;
@@ -554,26 +559,21 @@ footer a {
         margin-top: 2vw;
     }
     .rechercher_gauche {
-        border-radius: 15px 0px 0px 15px;
+        border-radius: 4vw 0 0 4vw;
         width: 14vw;
         height: 14vw;
     }
     .rechercher_centre {
         width: 65%;
-        height: 14vw;
-        font-size: 6vw;
+        font-size: 5.2vw;
+        padding: 0 4vw;
     }
     .rechercher_droite_bouton {
-        border-radius: 4vw;
-        height: 14vw;
-        width: 8vw;
-        font-size: 14px;
         z-index: 1;
+        visibility: hidden;
     }
     .rechercher_droite_loupe {
         z-index: 2;
-        height: 14vw;
-        font-size: 18px;
         color: white;
         background-color: #0065FC;
         border-radius: 4vw;
@@ -583,34 +583,40 @@ footer a {
         padding: 0 2vw;
         cursor: pointer;
         width: 9vw;
+        margin-left: -5vw;
+    }
+    .fa-search {
+        font-size: 4.5vw;
     }
     #rechercher {
-        padding: 0px 25px 0px 25px;
+        padding: 0 3.5vw;
     }
     .filtre_rechercher h3 {
         font-size: 5vw;
         margin-right: 48vw;
+        margin-bottom: 4vw
     }
     .filtre_rechercher {
         height: auto;
     }
     .filtre {
-        height: 48px;
+        height: 9.3vw;
         border-radius: 25px;
+        border: 1px solid #c7c6c6;
         margin-left: 0;
-        margin-right: 4vw;
+        margin-right: 3vw;
         margin-bottom: 4vw;
     }
     .bulle {
-        height: 50px;
-        width: 50px;
-        border-radius: 25px;
+        height: 9.6vw;
+        width: 9.6vw;
     }
     .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-        font-size: 15px;
+        font-size: 3.5vw;
     }
     .filtre a {
         font-size: 5vw;
+        padding: 0 3vw;
     }
     .résultat_logo {
         border-radius: 25px;
