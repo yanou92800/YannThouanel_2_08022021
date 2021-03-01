@@ -70,7 +70,7 @@ header {
 h1 {
     font-family: "raleway-bold";
     font-size: 1.5vw;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -86,8 +86,8 @@ h2 {
 h3 {
     font-family: 'raleway-bold';
     font-size: 1.1vw;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 h4 {
     margin-left: 15px;
@@ -99,8 +99,8 @@ h1+p {
     margin-top: 0.5vw;
 }
 h3+p {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .fa-star {
     width: 0.8vw;
@@ -127,7 +127,7 @@ h3+p {
     height: 3.3vw;
 }
 .rechercher_centre {
-    padding: 0px 20px;
+    padding: 0 20px;
     width: 12.7vw;
     border-right: none;
     border-left: none;
@@ -166,7 +166,7 @@ h3+p {
     font-family: 'raleway-bold';
     font-size: 1.1vw;
     margin-top: 17px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .filtre_rechercher {
     display: flex;
@@ -263,8 +263,8 @@ h3+p {
 }
 .contour_image {
     height: 58%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .texte_image {
     display: flex;
@@ -314,8 +314,8 @@ aside {
 }
 .contour_image_populaire {
     width: 40%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .image_populaire {
     object-fit: cover;
@@ -419,28 +419,28 @@ aside {
 }    
 .contour_image_carte_activité {
     height: 29.2vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .contour_image_carte_activité2 {
     height: 13.8vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .contour_image_carte_activité3 {
     height: 11.3vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .contour_image_carte_activité4 {
     height: 9.2vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .contour_image_carte_activité5 {
     height: 11.6vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .image_carte_activité {
     object-fit: cover;
@@ -477,7 +477,7 @@ footer h2 {
     font-family: "raleway-bold";
     font-size: 1.3vw;
     margin-bottom: 1vw;
-    margin-left: 0px;
+    margin-left: 0;
 }
 footer a {
     margin-bottom: 0.8vw;
@@ -487,7 +487,6 @@ footer a {
 @media screen and (max-width: 480px)
 {
     body {
-        font-size: 12px;
         width: 100%;
     }
     header {
@@ -495,7 +494,7 @@ footer a {
         grid-template-rows: 15vw 15vw;
         grid-template-areas: "logo sign" "nav nav";
         height: 40vw;
-        padding: 4vw 0;
+        padding: 5vw 0 0 0;
     }
     .logo_header {
         height: 15vw;
@@ -525,41 +524,43 @@ footer a {
         padding-right: 5vw;
     }
     h1 {
+        margin: 10vw 0 3vw 0;
         font-size: 6vw;
         width: 95%;
-        margin-bottom: 3vw;
     }
     h1+p {
         font-size: 5vw;
+        margin: 0 0 8vw 0;
     }
     h2 {
-        font-size: 16px;
+        font-size: 5vw;
     }
     .hébergement h2 {
-        margin-left: 0;
-        font-size: 6vw;
+        margin: 5vw 0;
+        font-size: 6.2vw;
     }
     h3 {
+        margin: 0;
         font-size: 5vw;
     }
     h4 {
-        font-size: 16px;
-        font-family: "raleway-bold";
+        margin: 4vw 0;
+        font-size: 5vw;
     }
     h1+p {
+        margin: 0;
         font-size: 4.3vw;
     }
     .fa-star {
-        width: 3.3vw;
-        font-size: 3.3vw;
+        width: 3.5vw;
+        font-size: 3.5vw;
     }
     .fa-map-marker-alt {
         font-size: 5vw;
     }
     .input_rechercher {
         justify-content: center;
-        margin-bottom: 7vw;
-        margin-top: 2vw;
+       margin: 10vw 0;
     }
     .rechercher_gauche {
         border-radius: 4vw 0 0 4vw;
@@ -595,9 +596,8 @@ footer a {
         padding: 0 3.5vw;
     }
     .filtre_rechercher h3 {
+        margin: 0 30vw 4vw 0;
         font-size: 5vw;
-        margin-right: 48vw;
-        margin-bottom: 4vw
     }
     .filtre_rechercher {
         height: auto;
@@ -634,7 +634,6 @@ footer a {
     }
     .fa-chart-line{
         font-size: 5vw;
-        margin-top: 3.4vw;
     }
     .résultat_texte {
         margin-left: 7vw;
@@ -642,27 +641,42 @@ footer a {
     }
     #hébergement_aside {
         flex-direction: column-reverse;
+        align-items: center;
     }
     .hébergement {
         background-color: white;
-        width: 93.2vw;
-        padding: 0 3.4vw;
+        width: 90%;
+        padding: 0;
     }
     .carte {
         border-radius: 5vw;
         width: 100%;
         height: 54vw;
         border: 0.8vw solid white;
+        margin-bottom: 5vw;
+    }
+    .texte_image {
+        margin-left: 3vw;
+    }
+    h3+p {
+        font-size: 4vw;
     }
     aside {
         border-radius: 0;
-        width: 95%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #texte_carte_populaire {
-        margin-bottom: 3vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 11vw 0 7vw 0;
     }
     #carte_aside {
-        width: 100%;
+        width: 90%;
     }
     .carte_populaire {
         border-radius: 5vw;
@@ -671,71 +685,72 @@ footer a {
     }
     #texte_carte_populaire h2 {
         font-size: 6vw;
-        margin: 2vw 0;
+        margin: 2vw 0 0 0;
     }
     .texte_populaire p {
         font-size: 4vw;
     }
-    .texte_populaire+span {
-        margin-left: 39.7vw;
-        margin-top: 34.5vw;
+    .texte_populaire span {
+            margin-top: 16vw;
     }
     .image_populaire {
         width: 35vw;
     }
+    #activité {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #activité h3 {
-        margin-left: 15px;
-        font-size: 15px;
-        margin-bottom: 15px;
+        margin: 5vw 0;
+        font-size: 6.5vw;
+        width: 90%;
     }
     .global_carte_activité {
-        width: 100%;
+        width: 90%;
     }
     .conteneur_carte_activité {
         width: 100%
     }
     .carte_activité {
-        height: 434px;
+        height: 54vw;
         width: 100%;
         border-radius: 15px;
     }  
     .carte_activité2 {
         width: 100%;
-        height: 229px;
+        height: 54vw;
         border-radius: 15px;
     } 
     .carte_activité3 {
         width: 100%;
-        height: 195px;
+        height: 54vw;
         border-radius: 15px;
     }  
     .carte_activité4 {
         width: 100%;
-        height: 168px;
+        height: 54vw;
         border-radius: 15px;
     }
     .carte_activité5 {
         width: 100%;
-        height: 200px;
+        height: 54vw;
         border-radius: 15px;
     }    
     .contour_image_carte_activité {
-        height: 388px;
+        height: 70%;
     }
     .contour_image_carte_activité2 {
-        height: 184px;
+        height: 70%;
     }
     .contour_image_carte_activité3 {
-        height: 150px;
+        height: 70%;
     }
     .contour_image_carte_activité4 {
-        height: 122px;
+        height: 70%;
     }
     .contour_image_carte_activité5 {
-        height: 154px;
-    }
-    #footer {
-        width: 1320px;
+        height: 70%;
     }
     .nav_footer {
         width: 100%;
@@ -744,6 +759,7 @@ footer a {
         width: 100%;
     }
     footer h2 {
+        margin: 0;
         font-size: 18px;
     }
     footer a {
