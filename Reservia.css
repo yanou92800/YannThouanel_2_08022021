@@ -78,7 +78,7 @@ h2 {
     font-family: "raleway-bold";
     font-size: 1.2vw;
 }
-.hébergement h2 {
+#hébergement h2 {
     margin-left: 1.5vw;
     font-family: "raleway-bold";
     font-size: 1.5vw;
@@ -237,7 +237,7 @@ h3+p {
     justify-content: space-between;
     margin-bottom: 1vw;
 }
-.hébergement {
+#hébergement {
     width: 60%;
     border-radius: 1.1vw;
     background-color: #f2f2f2;
@@ -535,7 +535,7 @@ footer a {
     h2 {
         font-size: 5vw;
     }
-    .hébergement h2 {
+    #hébergement h2 {
         margin: 5vw 0;
         font-size: 6.2vw;
     }
@@ -643,7 +643,7 @@ footer a {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .hébergement {
+    #hébergement {
         background-color: white;
         width: 90%;
         padding: 0;
