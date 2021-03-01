@@ -541,7 +541,7 @@ footer a {
     }
     h3 {
         margin: 0;
-        font-size: 5vw;
+        font-size: 4vw;
     }
     h4 {
         margin: 4vw 0;
@@ -687,6 +687,10 @@ footer a {
         font-size: 6vw;
         margin: 2vw 0 0 0;
     }
+    .texte_populaire {
+        margin-left: 5vw;
+        margin-top: 2.5vw;
+    }
     .texte_populaire p {
         font-size: 4vw;
     }
@@ -694,7 +698,7 @@ footer a {
             margin-top: 16vw;
     }
     .image_populaire {
-        width: 35vw;
+        width: 100%;
     }
     #activité {
         display: flex;
@@ -703,7 +707,7 @@ footer a {
     }
     #activité h3 {
         margin: 5vw 0;
-        font-size: 6.5vw;
+        font-size: 6.2vw;
         width: 90%;
     }
     .global_carte_activité {
