@@ -691,6 +691,9 @@ footer a {
     .global_carte_activité {
         width: 100%;
     }
+    .conteneur_carte_activité {
+        width: 100%
+    }
     .carte_activité {
         height: 434px;
         width: 100%;
@@ -748,5 +751,6 @@ footer a {
     }
     main {
         margin-top: -13vw;
+        padding: 0;
     }
 }
