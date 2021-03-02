@@ -259,7 +259,7 @@ h3+p {
     width: 16.7vw;
     height: 13.8vw;
     box-shadow: 1px 1px 10px hsl(0, 2%, 74%);
-    margin-bottom: 30px;
+    margin-bottom: 3vw;
 }
 .contour_image {
     height: 58%;
@@ -468,8 +468,6 @@ footer {
 }
 .nav_footer {
     width: 33%;
-}
-.nav_footer nav {
     display: flex;
     flex-direction: column;
 }
