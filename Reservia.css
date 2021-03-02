@@ -482,6 +482,147 @@ footer a {
     font-size: 1vw;
 }
 
+@media screen and (min-width: 481px) and (max-width: 1024px)
+{
+    body {
+        font-size: 1.4vw;
+    }
+    header {
+        grid-template-columns: 13.8vw auto 31.7vw 10.8vw;
+    }
+    .logo_header {
+        height: 6vw;
+    }
+    .nav_header_lien {
+        font-size: 2.2vw;
+    }
+    .sign_header {
+        font-size: 2.2vw;
+    }
+    h1 {
+        font-size: 2.5vw;
+    }
+    
+    #hébergement h2 {
+        font-size: 2.5vw;
+    }
+    h3 {
+        font-size: 1.9vw;
+    }
+    h4 {
+        font-size: 2vw;
+    }
+    h1+p {
+        font-size: 2.1vw;
+    }
+    .fa-star {
+        width: 1.3vw;
+    }
+    .rechercher_gauche {
+        width: 4.3vw;
+        height: 4.3vw;
+    }
+    .fa-map-marker-alt {
+        font-size: 1.5vw;
+    }
+    .rechercher_centre {
+        width: 16.7vw;
+        font-size: 2.1vw;
+    }
+    .rechercher_droite_bouton {
+        height: 4.3vw;
+        font-size: 1.6vw;
+        width: 10vw;
+    }
+    .filtre_rechercher h3 {
+        font-size: 2.1vw;
+        margin-top: 1.3vw;
+    }
+    .filtre_rechercher {
+        margin-bottom: 2vw;
+    }
+    .filtre {
+        height: 4.5vw;
+        border-radius: 2.2vw;
+        margin-left: 1%;
+    }
+    .bulle {
+        height: 4.7vw;
+        width: 4.7vw;
+    }
+    .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+        font-size: 1.8vw;
+    }
+    .filtre a {
+        font-size: 2vw;
+        padding: 0 2vw;
+    }
+    .résultat_logo {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    .fa-info {
+        font-size: 1.2vw;
+    }
+    .fa-chart-line{
+        font-size: 3.2vw;
+        margin: 0;
+    }
+    .résultat_texte {
+        font-size: 2vw;
+        margin: 2vw 1vw;
+    }
+    #hébergement_aside {
+        flex-direction: column;
+        margin-bottom: 2vw;
+    }
+    #hébergement {
+        width: 95%;
+    }
+    .carte {
+        width: 30%;
+        height: 20vw;
+    }
+    .contour_image {
+        height: 65%;
+    }
+    aside {
+      display: flex;
+      flex-direction: column;
+    }
+    #texte_carte_populaire {
+        width: 50%;
+        margin: 1.4vw;
+    }
+    #carte_aside {
+        flex-direction: row;
+        width: 100%;
+    }
+    .carte_populaire {
+        height: 15vw;
+        width: 28vw;
+    }
+    #texte_carte_populaire h2 {
+        font-size: 2.5vw;
+        margin: 0;
+    }
+    .image_populaire {
+        width: 11.2vw;
+    }
+    .texte_populaire h3 {
+        font-size: 1.6vw;
+    }
+    #activité h3 {
+        font-size: 2.5vw;
+    }
+    footer h2 {
+        font-size: 2.3vw;
+    }
+    footer a {
+        font-size: 2vw;
+    }
+}
+
 @media screen and (max-width: 480px)
 {
     body {
@@ -603,7 +744,7 @@ footer a {
     }
     .filtre {
         height: 9.3vw;
-        border-radius: 25px;
+        border-radius: 5vw;
         border: 1px solid #c7c6c6;
         margin-left: 0;
         margin-right: 3vw;
