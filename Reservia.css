@@ -104,6 +104,7 @@ h3+p {
 }
 .fa-star {
     width: 0.8vw;
+    color: #0065FC;
 }
 .fa-map-marker-alt {
     font-size: 1.2vw;
@@ -336,9 +337,6 @@ aside {
 .texte_populaire span {
     flex: 1;
     margin-top: 3.2vw;
-}
-.fa-star {
-    color: #0065FC;
 }
 .star-empty {
     color: #f2f2f2;
@@ -615,6 +613,44 @@ footer a {
     #activité h3 {
         font-size: 2.5vw;
     }
+    .carte_activité {
+        width: 30vw;
+    }  
+    .carte_activité2 {
+        width: 30vw;
+        height: 32.6vw;
+    } 
+    .carte_activité3 {
+        width: 30vw;
+        height: 32.6vw;
+    }  
+    .carte_activité4 {
+        width: 30vw;
+        height: 32.6vw;
+    }
+    .carte_activité5 {
+        width: 30vw;
+        height: 32.6vw;
+    }    
+    .contour_image_carte_activité {
+        height: 29.2vw;
+    }
+    .contour_image_carte_activité2 {
+        height: 29.2vw;
+    }
+    .contour_image_carte_activité3 {
+        height: 29.2vw;
+    }
+    .contour_image_carte_activité4 {
+        height: 29.2vw;
+    }
+    .contour_image_carte_activité5 {
+        height: 29.2vw;
+    }
+    .conteneur_carte_activité {
+        flex-direction: row;
+        width: 65.5%;
+    }
     footer h2 {
         font-size: 2.3vw;
     }
@@ -622,7 +658,6 @@ footer a {
         font-size: 2vw;
     }
 }
-
 @media screen and (max-width: 480px)
 {
     body {
