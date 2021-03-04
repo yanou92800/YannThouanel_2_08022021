@@ -33,6 +33,7 @@ Tâche attribuée par le manager, Sarah, CTO de l'entreprise: **Intégrer la maq
  - Github Pages
  - Visual Studio Code + plugins LiveServer et Prettier
  - Font Awesome
+ - paint.net
  - Validateur W3C pour [HTML](https://validator.w3.org/) et [CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
 **Technos utilisés***
