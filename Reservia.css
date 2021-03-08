@@ -135,6 +135,7 @@ h3+p {
     border-top: 1px solid #edebeb;
     border-bottom: 1px solid #edebeb;
     font-size: 1.1vw;
+    font-family: "raleway-bold";
 }
 .rechercher_droite {
     display: flex;
